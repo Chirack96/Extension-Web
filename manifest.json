@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Domain Safety Checker",
+  "version": "1.0",
+  "description": "Warns users when they enter a potentially unsafe domain.",
+  "permissions": ["activeTab", "<all_urls>","notifications", "webNavigation", "windows"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "alert.html",
+    "default_icon": {
+      "48": "icons/border-48.png"
+    }
+  },
+  "icons": {
+    "48": "icons/border-48.png"
+  }
+}
